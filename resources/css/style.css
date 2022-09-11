@@ -1,0 +1,165 @@
+
+:root {
+    font-size: 62.5%;
+    --primary-blue: #B1D0E0;
+    --secondary-blue: #6998AB;
+    --white: #fff;
+    --light-grey: #f1f1f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+}
+main > * {
+    width: 100%;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-blue);
+    position: relative;
+}
+.rectangle {
+    width: 100%;
+    height: 50%;
+    background-color: var(--secondary-blue);
+    letter-spacing: 0.12rem;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(225, 225, 225, 0.5);
+}
+.modal {
+    width: 80%;
+    height: 80%;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 1rem 0.8rem 0.4rem rgba(0,0,0,.15);
+    text-align: center;
+}
+.modal-header {
+    width: 100%;
+    padding: 1.5rem;
+    color: #333;
+    border-bottom: 0.1rem solid var(--light-grey);
+    text-align: center;
+}
+.modal-header h2 {
+    font-size: 4.2rem;
+}
+.modal-main {
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+.modal-main p {
+    width: 80%;
+    margin: 0 auto 3rem;
+    font-size: 2rem;
+    color: rgb(73, 73, 73);
+}
+.modal-list {
+    width: 80%;
+    margin: 0 auto;
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+.modal-list__item {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: rgb(73, 73, 73);
+}
+.close-modal {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.2rem 2.2rem;
+    border-radius: 0.4rem;
+    color: var(--secondary-blue);
+    border: 1.5px solid var(--secondary-blue);
+    background-color: var(--white);
+    -webkit-user-select: none;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.close-modal:hover {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+}
+.goUP {
+    top: -30% !important;
+    transition: top 0.5s ease;
+}
+
+.goDOWN {
+    top: 50% !important;
+    transition: top 0.5s ease;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1023px){
+    .modal-main p {
+        font-size: 1.8rem;
+    }
+    .modal-list__item {
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .modal-header h2 {
+        font-size: 3.5rem;
+    }
+    .modal-main p {
+        font-size: 1.8rem;
+    }
+    .modal-list__item {
+        font-size: 1.7rem;
+    }
+    .close-modal {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .modal-header h2 {
+        font-size: 3rem;
+    }
+    .modal-main p {
+        width: 90%;
+        font-size: 1.6rem;
+    }
+    .modal-list__item {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .modal-header h2 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,105 @@
+
+.main-content {
+    width: 40rem;
+    height: 40rem;
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1rem 0.8rem 0.4rem rgba(0,0,0,.15);
+}
+
+.end-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+.end__primary-text {
+    font-size: 2.5rem;
+    letter-spacing: 0.12rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    -webkit-user-select: none;
+}
+.end__score-overlay {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--secondary-blue) 0%,
+        var(--primary-blue) 0%
+    );
+}
+.end__score-progress {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+#end__score {
+    font-size: 1.8rem;
+    color: var(--secondary-blue);
+    -webkit-user-select: none;
+}
+.restart {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.2rem 2.2rem;
+    border-radius: 0.4rem;
+    color: var(--secondary-blue);
+    border: 1.5px solid var(--secondary-blue);
+    background-color: var(--white);
+    -webkit-user-select: none;
+    margin-top: 3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.restart:hover {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1023px){
+    .main-content {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        width: 30rem;
+        height: 30rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .main-content {
+        width: 25rem;
+        height: 30rem;
+        padding: 3rem 0;
+    }
+    .end__score-overlay {
+        width: 7rem;
+        height: 7rem;
+    }
+    #end__score {
+        font-size: 1.6rem;
+    }
+    .end__primary-text {
+        font-size: 2.2rem;
+    }
+    .restart {
+        font-size: 1.8rem;
+    }
+
+}

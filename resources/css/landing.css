@@ -1,0 +1,76 @@
+
+/* Main */
+
+.main-content {
+    width: 40rem;
+    height: 40rem;
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1rem 0.8rem 0.4rem rgba(0,0,0,.15);
+}
+.circle {
+    width: 15rem;
+    height: 15rem;
+    /* background-color: var(--secondary-blue); */
+    border: 0.5rem solid var(--secondary-blue);
+    border-radius: 50%;
+    box-shadow: 0 0.4rem 0.8rem 0.4rem rgba(0,0,0,.25);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.circle a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--secondary-blue);
+    letter-spacing: 0.12rem;
+    -webkit-user-select: none;
+
+}
+
+.circle:active{
+    box-shadow: none;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1023px){
+    .main-content {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        width: 30rem;
+        height: 30rem;
+    }
+    .circle {
+        width: 13rem;
+        height: 13rem;
+    }
+    .circle a {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main-content {
+        width: 25rem;
+        height: 25rem;
+    }
+    .circle {
+        width: 11rem;
+        height: 11rem;
+    }
+    .circle a {
+        font-size: 2.2rem;
+    }
+}

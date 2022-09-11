@@ -1,0 +1,64 @@
+<div id="main" class="container game-container">
+
+    <div id="loader" class="flex">
+        <!-- loader from - https://loading.io/css/ -->
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="rectangle">
+        <div class="upper_container flex-column">
+
+            <!-- Stats -->
+            <div class="stats flex">
+                <div class="counter">
+                    <p class="primary-text question-number">Question</p>
+                    <div class="progress-overlay">
+                        <div class="progress-bar flex">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="score">
+                    <p class="primary-text">Score</p>
+                    <div class="score-overlay flex">
+                        <div class="score-progress flex">
+                            <p id="score">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question -->
+            <div class="question_container">
+                <p id="question">What is the answer to this question?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options -->
+
+    <div class="lower_container">
+        <div class="option_container flex-column">
+            <div class="upper-half flex">
+                <div class="option option-1 flex" data-value="1">
+                    <p class="option-data">Option 1</p>
+                </div>
+                <div class="option option-2 flex" data-value="2">
+                    <p class="option-data">Option 2</p>
+                </div>
+            </div>
+            <div class="lower-half flex">
+                <div class="option option-3 flex" data-value="3">
+                    <p class="option-data">Option 3</p>
+                </div>
+                <div class="option option-4 flex" data-value="4">
+                    <p class="option-data">Option 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
